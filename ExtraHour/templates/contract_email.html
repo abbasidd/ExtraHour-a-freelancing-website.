@@ -1,0 +1,5 @@
+{% autoescape off %}
+Hi {{ freelancer }},
+Please click on the link to confirm your registration,
+http://{{ domain }}{% url 'purposal_contract:activate' purposal_id=uid token=token %}
+{% endautoescape %}

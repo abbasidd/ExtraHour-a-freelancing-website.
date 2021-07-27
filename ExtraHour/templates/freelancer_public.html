@@ -1,0 +1,627 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ExtraHour:Cash ur Skills</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/custom-bs.css'%}">
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.cs'%}s">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css'%}">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/quill.snow.css'%}">
+    <link rel="stylesheet" href="{% static 'css/fontawsome.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/all.css'%}">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesgeet"
+        href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+    <!--main css-->
+    <link rel="stylesheet" href="{% static 'css/new.css'%}">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <style>
+        #file {
+            display: none;
+        }
+        .fa-camera{
+            background-color:#fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            padding-top:15px;
+            margin-bottom: 35%;
+    margin-right: 34%;
+            
+            overflow: hidden;
+            
+        }
+        @media screen and (max-width:990px){
+            .fa-camera {
+               
+                margin-bottom: 35%;
+                margin-right: 29%;
+            }
+        }
+        @media screen and (max-width:375px){
+            .fa-camera {
+               
+                margin-bottom: 44%;
+                margin-right: 19%;
+            }
+        }
+        @media screen and (max-width:321px){
+            .fa-camera {
+               
+                margin-bottom: 65%;
+                margin-right: 20%;
+            }
+        }
+        @media screen and (max-width:361px){
+            .fa-camera {
+               
+                margin-bottom: 45%;
+                margin-right: 25%;
+            }
+        }
+        
+        .fa-camera:hover {
+            cursor: pointer;
+            color: rgba(137, 186, 22, 0.9);
+            display: block;
+        }
+       .spinner-border{
+            color: rgba(137, 186, 22, 0.9) !important;
+       }
+       hr{
+        margin-left: 7rem !important;
+        margin-right: 7rem !important;
+       }
+       p{
+           word-wrap: break-word;
+           padding-left: 10% ;
+           padding-right: 10%;
+           font-family: 'icomoon';
+       }
+       h2{
+        font-family: 'icomoon';
+       }
+       @media screen and(max-width: 720px)
+       {
+           p{
+                word-wrap: none;
+                padding-left: 0 ;
+                padding-right: 0;
+           }
+       }
+       @media screen and(max-width: 414px)
+       {
+           p{
+               word-wrap:none;
+               padding-left: 0px ;
+                padding-right: 0px;
+           }
+       }
+       .fa{
+           opacity: 1;
+       }
+       @media screen and (max-width: 720px)
+       {
+           .friend img, .friend p{
+               margin-left:0 !important;
+               margin-right: 0 !important;
+           }
+       }
+       @media screen and (max-width: 990px)
+       {
+           .friend img, .friend p{
+               margin-left:0 !important;
+               margin-right: 0 !important;
+               
+           }
+       }
+       @media screen and (max-width: 376px)
+       {
+           .friend p{
+               margin-left:0 !important;
+               margin-right: 0 !important;
+               width: 60% !important;
+               
+           }
+       }
+       @media screen and (max-width: 415px)
+       {
+           .friend p{
+               margin-left:0 !important;
+               margin-right: 0 !important;
+               width: 50% !important;
+               
+           }
+       }
+       .btn.btn-success {
+        color: #ffffff;
+        background-color: #94bd2f;
+        border-color: #ccc;
+        width: 60px;
+    height: 30px;
+    text-align: center;
+    /* padding-left: 14px; */
+    /* padding-bottom: 10px; */
+    padding: 10px;
+    }
+    .btn.btn-success:hover{
+        color: #ffffff!important;
+        background-color: #87ac2a!important;
+        border-color: #ccc!important;
+    }
+    .fa-edit:hover{
+       color:#94bd2f ;
+       cursor: pointer; 
+    }
+    .popup{
+        display: none;
+    }
+    .popup1{
+        display: none;
+    }
+    .popup2{
+        display: none;
+    }
+    .popup3{
+        display: none;
+    }
+    </style>
+    <script>
+        /*$(document).ready(function() {
+            $('#edit-button').click(function() {
+              $('div.popup').show();
+              $('div.ski p>span').hide();
+            $('div.popup textarea').val($('div.ski p>span').html());
+          });
+          $('div.popup button').click(function() {
+            $('div.ski p>span').html($('div.popup textarea').val());
+          $('div.popup').hide();
+          $('div.ski p>span').show();
+        });
+      });
+      $(document).ready(function() {
+        $('#edit-button1').click(function() {
+          $('div.popup1').show();
+          $('div.des p>span').hide();
+        $('div.popup1 textarea').val($('div.des p>span').html());
+      });
+      $('div.popup1 button').click(function() {
+        $('div.des p>span').html($('div.popup1 textarea').val());
+      $('div.popup1').hide();
+      $('div.des p>span').show();
+    });
+  }); $(document).ready(function() {
+    $('#edit-button2').click(function() {
+      $('div.popup2').show();
+      $('div.cer p>span').hide();
+    $('div.popup2 textarea').val($('div.cer p>span').html());
+  });
+  $('div.popup2 button').click(function() {
+    $('div.cer p>span').html($('div.popup2 textarea').val());
+  $('div.popup2').hide();
+  $('div.cer p>span').show();
+});
+}); $(document).ready(function() {
+    $('#edit-button3').click(function() {
+      $('div.popup3').show();
+      $('div.add p>span').hide();
+    $('div.popup3 textarea').val($('div.add p>span').html());
+  });
+  $('div.popup3 button').click(function() {
+    $('div.add p>span').html($('div.popup3 textarea').val());
+  $('div.popup3').hide();
+  $('div.add p>span').show();
+});
+});*/
+function profile()
+{
+    $('#pro_pic').submit();
+}
+    </script>
+    </head>
+
+<body class="profile-page">
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <!-- .site-mobile-menu -->
+
+
+        <!-- NAVBAR -->
+        <header class="site-navbar mt-3">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="site-logo col-6"><a href="{% url 'accounts:home' %}">ExtraHour</a></div>
+
+                    <nav class="mx-auto site-navigation">
+                        <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                          <li><a href="{% url 'accounts:home' %}" class="nav-link">Home</a></li>
+                          <li class="has-children">
+                            <a href="{% url 'accounts:about_us' %}" class="nav-link">About</a>
+                            <ul class="dropdown">
+                            <li><a href="{% url 'accounts:contact' %}" class="nav-link">Contact</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-children">
+                            <a href="{% url 'job:job_listing' %}">Job Listings</a>
+                            <ul class="dropdown">
+                              
+                              <li><a href="{% url 'skill_test:quizes' %}">Tests</a></li>
+                              
+                            </ul>
+                          </li>
+                          <li class="has-children">
+                            
+                            <ul class="dropdown">
+                              <li><a href="{% url 'blog:blog' %}">Blog</a></li>
+                              
+                              
+                            
+                            </ul>
+                          </li>
+                          
+                          <li><a href="{% url 'purposal_contract:client_inbox' %}">Inbox</a></li>
+                          <li class="d-lg-none"><a href="{% url 'accounts:signup' %}"><span class="mr-2">+</span> Sign Up</a></li>
+                          <li class="d-lg-none"><a href="{% url 'accounts:login' %}">Log In</a></li>
+                        </ul>
+                      </nav>
+
+                    <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+                        <div class="ml-auto">
+                            <a href="{% url 'job:post_job' %}"
+                class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span
+                  class="mr-2 icon-add"></span>Post a Job</a>
+              {% if user.is_authenticated %}
+              <a href="{% url 'accounts:logout' %}"
+                class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+                  class="mr-2 icon-lock_outline"></span>Log Out</a>
+              {% else %}
+              <a href="{% url 'accounts:login' %}" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+                  class="mr-2 icon-lock_outline"></span>Log In</a>
+              {% endif %}
+                        </div>
+                        <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span
+                                class="icon-menu h3 m-0 p-0 mt-2"></span></a>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+    <div class="page-header header-filter" data-parallax="true"
+        style="background-image:url(https://source.unsplash.com/1600x900/?computing);"></div>
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile">
+                            <div class="avatar">
+                                <img src="{{request.user.freelancer.profile_pic.url}}"  style="width: 40% !important" alt="Circle Image"
+                                    class="img-raised rounded-circle img-fluid">
+                                   
+                            </div>
+                            <!-- <form action="{% url 'freelancer:update_pic' %}" id ="pro_pic" method="POST">
+                                {% csrf_token %}
+                                    <input type="file" onchange="profile()" name="profile_pic" class="btn btn-primary" id="file" accept="image/*">
+                                
+                            </form>
+                            
+                            <label for="file">
+                                <i class="fas fa-camera"></i>
+                            </label> -->
+                            <div class="name">
+                                <h3 class="title">{{request.user.first_name}} {{request.user.last_name}}</h3>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center">
+                    <p>{{request.user.freelancer.overview}} </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile-tabs">
+                            <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#account" role="tab" data-toggle="tab">
+                                        <i class="material-icons">person</i>
+                                        Account
+                                    </a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#review" role="tab" data-toggle="tab">
+                                        <i class="material-icons">star</i>
+                                        Review
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content tab-space">
+                    <div class="tab-pane active text-center gallery" id="account">
+                        <div class="row">
+                            <div class="col-sm-12 ml-auto">
+                                <div class="container">
+                                    <div class="row form-group">
+                                        <div class="col-md-12 mb-3 mb-md-0">
+                                    <h2>Skills</h2>
+                                    <p><span> {% for skill in request.user.freelancer.skill.all %}
+                                      {{skill}},
+                                     {% endfor %}
+                                    </span></p>
+                                   
+                                    </div>
+                                    </div>
+
+                                   
+                                    <hr style="border: 3px solid #f1f1f1">
+                                    <div class="row form-group">
+                                        <div class="col-md-12 mb-3 mb-md-0">
+                                    <h2>Description</h2>
+                                    <p><span>{{request.user.freelancer.overview}}</span> </p>
+                                   
+                                </div>
+                                    </div>
+                                   
+                                    <hr style="border: 3px solid #f1f1f1">
+                                   
+                                      
+                                    
+                                    <div class="row form-group ">
+                                        <div class="col-md-12 mb-3 mb-md-0">
+                                    <h2>Certification</h2>
+                                    {% for certification in certifications %}
+                                    <div class="row">
+                                    <div class="col mt-2">
+                                        <label class="text-black" for="fname"><b>Name</b></label><br>
+                                        <p id="fname" class="text-black">
+                                            {{certification.certification_name}}
+                                        </p>
+                                    </div>
+                                    <div class="col mt-2">
+                                        <label class="text-black" for="fname"><strong>Provider</strong></label><br>
+                                        <p id="fname" class="text-black">
+                                            {{certification.provider}}
+                                        </p>
+                                    </div>
+                                    <div class="col mt-2">
+                                        <label class="text-black" for="fname"><strong>Certification's Link</strong></label><br>
+                                        <p id="fname" class="text-black">
+                                            {{certification.certification_link}}
+                                        </p>
+                                    </div>
+                                    <div class="col mt-2">
+                                        <label class="text-black" for="fname"><strong>Date Earned</strong></label><br>
+                                        <p id="fname" class="text-black">
+                                            {{certification.date_earned}}
+                                        </p>
+                                    </div>
+                                    <div class="col mt-2">
+                                        <label class="text-black" for="fname"><strong>Description</strong></label><br>
+                                        <p id="fname" class="text-black">
+                                            {{certification.description}}
+                                        </p>
+                                    </div>
+                                    </div>
+                                    {% endfor %}
+                                    
+                                    </div>
+                                    </div>
+                                   
+                                    <hr style="border: 3px solid #f1f1f1">
+                                    <div class="row form-group">
+                                        <div class="col-md-12 mb-3 mb-md-0">
+                                    <h2>Address</h2>
+                                    <p><span>{{request.user.freelancer.location}}}</span></p>
+                                   
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    
+                 
+                    <div class="tab-pane text-center gallery" id="review">
+                        <div class="row p-4 rounded border">
+                            <div class="col-md-12 ml-auto">
+                                <span class="heading">User Rating</span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <p>4.1 average based on 254 reviews.</p>
+                                <hr style="border:3px solid #f1f1f1">
+
+                                <div class="row">
+                                    <div class="side">
+                                        <div>5 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>150</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>4 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>63</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>3 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>15</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>2 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>1 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>20</div>
+                                    </div>
+                                </div>
+                                <hr style="border: 3px solid #f1f1f1">
+                                
+                                      <label class="text-black" for="message"><h2>Comments</h2></label>
+                                      <div class="friend" >
+                                      <h6>Usman</h6>
+                                      <p style="display: inline-flex; margin-right:20%; border-radius:25px; background-color:yellowgreen">Done work properly, Have nice experienced</p>
+                                      <img src="{% static 'images/us.jpg'%}" style="width: 30px;
+                                      border-radius: 50%;
+                                      float: left;
+                                      margin-right: 10px;
+                                      height: 10%; margin-left:20%;">
+                                      <h6 style="margin-top: 5%;">Rafay</h6>
+                                      <p style="display: inline-flex; margin-right:20%; border-radius:25px; background-color:yellowgreen">Done work on time</p>
+                                      <img src="{% static 'images/pp (1).jpg'%}" style="width: 30px;
+                                      border-radius: 50%;
+                                      float: left;
+                                      margin-right: 10px;
+                                      height: 10%; margin-left:20%;">
+                                    </div>
+                                    
+                                      
+                                    
+                                    
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+        <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+    <script src="{% static 'js/stickyfill.min.js'%}"></script>
+    <script src="{% static 'js/jquery.fancybox.min.js'%}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+
+
+    <script src="{% static 'js/jquery.waypoints.min.js'%}"></script>
+    <script src="{% static 'js/jquery.animateNumber.min.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/quill.min.js'%}"></script>
+
+
+    <script src="{% static 'js/bootstrap-select.min.js'%}"></script>
+
+    <script src="{% static 'js/custom.js'%}"></script>
+    <script src="{% static 'js/app.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+.container i
+{
+    float: right;
+    margin-top: -25px;
+    padding-right: 8px;
+}
+.container form
+{
+    margin-left: 30%;
+    margin-bottom: 10%;
+}
+@media screen and (min-width:414px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -8%;
+    padding-right: 8px;
+}
+}
+@media screen and (min-width:800px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -5%;
+    padding-right: 8px;
+}
+}
+@media screen and (min-width:375px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -4%;
+    padding-right: 8px;
+}
+}
+@media screen and (min-width:1024px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -7%;
+    padding-right: 8px;
+}
+}
+@media screen and (min-width:320px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -25px;
+    padding-right: 8px;
+}
+}
+@media screen and (min-width:316px)
+{
+    .container i
+{
+    float: right;
+    margin-top: -30px;
+    padding-right: 8px;
+}
+}
+.mb-4{
+    margin-left: 29% !important;
+}
