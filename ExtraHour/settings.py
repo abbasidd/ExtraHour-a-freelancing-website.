@@ -130,8 +130,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51HvfRyCmPgXictcT8JQF2l1yDJXakV8rh8UaepjMJXEWl32ZP8Hd0xUTTQTzL5lXN8Ha3uKpiLN4SVXJduRfz4sf00wd5a4GVd'
-STRIPE_SECRET_KEY = 'sk_test_51HvfRyCmPgXictcTGNI4iZFDPNmaSL8lWcGJ2FvfUi4DfvpLGxfqmpZI8RZ9vx4XK64CDQrCCi2IpyZFjgPRiqti00yOW1HFVI'
+STRIPE_PUBLISHABLE_KEY = ''
+STRIPE_SECRET_KEY = ''
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
